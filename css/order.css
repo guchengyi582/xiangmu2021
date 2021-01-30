@@ -1,0 +1,418 @@
+/* 清除浏览器的默认间距 */
+*{
+    margin: 0;padding: 0
+}
+/* 清除b、strong标签的默认样式 */
+b,strong{
+    font-weight: normal
+}
+/* 清除i、em标签的默认样式 */
+i,em{
+    font-style: normal
+}
+/* 清除a、u标签的默认下划线 */
+a,u{
+    text-decoration: none
+}
+/* 清除列表默认样式符号 */
+ul,li{
+    list-style: none
+}
+/* 解决行内块元素基线对齐的问题 */
+img,input{
+    vertical-align: middle
+}
+/* 解决图片bug问题 */
+img{
+    border: none;
+    display: block;
+}
+
+
+/* 第一部分 头部 */
+#head{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #616161;
+    overflow: hidden;
+}
+#head .head-con{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;  
+}
+#head .head-con .left{
+    cursor: pointer;
+    float: left;
+}
+#head .head-con .left img{
+    width: 257.4px;
+    height: 54px;
+}
+#head .head-con .right{
+    width: 328px;
+    float: right;
+    line-height: 50px;
+    text-align: right;
+}
+#head .head-con .right a{
+    color: #616161;
+}
+#head .head-con .right a:hover{
+    color: #c43732;
+}
+#head .head-con .right li{
+    display: inline-block;
+    padding: 0 13px;
+    text-align: right;
+}
+
+#head .head-con .right li:hover{
+    cursor: pointer;
+    color: #c43732;
+}
+
+/* 第二部分 导航 */
+#nav{
+    width: 100%;
+    height: 90px;
+    background-color: #303942;
+    color: #fff;
+}
+#nav .nav-con{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    overflow: hidden;
+}
+#nav .nav-con .left{
+    width: 420px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav .nav-con .left li:nth-child(1){
+    width: 165px;
+    text-align: center;
+}
+#nav .nav-con .left li:nth-child(2){
+    width: 122px;
+    text-align: center;
+}
+#nav .nav-con .left li:nth-child(3){
+    width: 160px;
+    text-align: center;
+}
+#nav .nav-con .left li:nth-child(2){
+    background: url(../images/bg.png);
+    color: #c43732;
+}
+#nav .nav-con .left li:hover{
+    background: url(../images/bg.png);
+}
+#nav .nav-con .right span:nth-child(1){
+   font-size: 20px;
+   margin-right: 10px;
+}
+#nav .nav-con .right span:nth-child(2){
+    font-size: 16px;
+ }
+#nav .nav-con span:hover{
+    cursor: pointer;
+    color: #c43732;
+}
+#nav .nav-con li{
+    height: 90px;
+    line-height: 90px;
+}
+#nav .nav-con li:hover{
+    border-bottom:2px #c43732 solid;
+    color: #c43732;
+}
+
+/* 第三部分 订单列表 */
+#order{
+    width: 100%;
+    height: 53px;
+    background: #f7f7f7;
+    border-top: solid 1px #ededed;
+    border-bottom: solid 1px #ededed;
+    
+}
+#order .ss{
+    width: 1200px;
+    height: 53px;
+    margin: 0 auto;
+    line-height: 53px;
+    font-size: 16px;
+}
+
+/* 第四部分 未登录 */
+#notlogin{
+    width: 100%;
+    height: 270px;
+    padding: 20px;
+}
+.notlogin-con{
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 270px;
+    height: 270px;
+    background: #ffffff;
+    color: #4e4e4e;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    border-style: none;
+}
+.notlogin-con img{
+    display: inline-block;
+}
+.notlogin-con a{
+    color: #f01f27;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+/* 第五部分 尾巴 */
+.footer{
+    width: 100%;
+}
+.footer .box1{
+    width: 100%;
+    height: 248px;
+    border-top: 1px #ccc solid;
+}
+.footer .box1-con{
+    width: 1200px;
+    height: 248px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .box1-con .left{
+    width: 158px;
+    height: 248px;
+}
+.footer .box1-con .left .top{
+    width: 158px;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.footer .box1-con .left .bottom{
+    width: 150px;
+    height: 140px;
+    font-size: 14px;
+    border: 1px #ccc solid;
+    text-align: center;
+    position: relative;
+}
+.footer .box1-con .left .bottom img{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+.footer .box1-con .left .bottom li:nth-child(2){
+    text-align: center;
+    line-height: 230px;
+}
+
+.footer .box1-con .center{
+    width: 738px;
+    height: 248px;
+    box-sizing: border-box;
+}
+.footer .box1-con .center .top{
+    width: 100%;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.footer .box1-con .center .bottom{
+    width: 150px;
+    height: 140px;
+    font-size: 14px;
+    border: 1px #ccc solid;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin: 0 15px;
+    overflow: hidden;
+}
+.footer .box1-con .center .bottom:nth-child(4){
+    margin-right: 0px;
+}
+.footer .box1-con .center .bottom img{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+.footer .box1-con .center .bottom li:nth-child(2){
+    text-align: center;
+    line-height: 230px;
+}
+.footer .box1-con .right .top{
+    width: 200px;
+    height: 110px;
+    text-align: center;
+    line-height: 120px;
+    box-sizing: border-box;
+    /* background-color: #f01f27; */
+    margin-top: 40px ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .box1-con .right .top img{
+    width: 47px;
+    height: 56px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.footer .box1-con .right .top div:nth-child(2){
+    width: 112px;
+    padding-top: 30px;
+    /* background-color: aqua; */
+    display: table-cell;
+    vertical-align: middle;
+}
+.footer .box1-con .right .top span:nth-child(2){
+    font-weight: bold;
+}
+.footer .box1-con .right .top span{
+    height: 20px;
+    font-size: 12px;
+    display: block;
+    line-height: 20px;
+}
+.footer .box1-con .right .bottom{
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    margin-top: 10px;
+    border: 1px #ccc solid;
+    cursor: pointer;
+}
+.footer .box1-con .right .bottom img{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+.footer .box2{
+    width: 100%;
+    height: 100px;
+    background-color: #292929;
+}
+.footer .box2-con{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .box2-con div:nth-child(1){
+    display: inline-block;
+    line-height: 60px;
+    padding-left: 74px;
+    font-size: 20px;
+    color: #999;
+    margin-right: 70px;
+    height: 61px;
+    background: url(../images/15.png) no-repeat;
+}
+.footer .box2-con div:nth-child(2){
+    display: inline-block;
+    line-height: 60px;
+    padding-left: 74px;
+    font-size: 20px;
+    color: #999;
+    margin-left: 70px;
+    height: 60px;
+    background: url(../images/16.png) no-repeat;
+}
+.footer .box3{
+    padding: 20px 0;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+.footer .box3-con{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #868686;
+    font-size: 12px;
+}
+.footer .box3-con p{
+    line-height: 24px;
+    cursor: pointer;
+}
+.footer .box3-con p img{
+    margin-right: 15px;
+    display: inline;
+    padding-top: 10px;
+}
+/* 返回到页面顶端 */
+.ant{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.ant .ant-a{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+}
+.ant .ant-b{
+    width: 14px;
+    height: 16px;
+    margin: 12px auto;
+    background: url(../images/21.png) 100%/100% no-repeat;
+}
